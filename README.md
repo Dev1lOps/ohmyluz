@@ -1,6 +1,6 @@
 # ohmyluz — Landing Electricista 24/7 (HTML + CSS)
 
-Ohmyluz es una plantilla **estática** para servicios eléctricos (24/7), con bloques editables y un estilo distinto a Pagiopro.
+Ohmyluz es una plantilla **estática** para servicios eléctricos (24/7), con bloques editables.
 
 ## Estructura de carpetas
 ```
@@ -29,9 +29,7 @@ ohmyluz/
 - Mapa: cambia el parámetro `q=` del `<iframe>` (ciudad/barrio).
 - SEO: `<title>`, `<meta name="description">` y JSON-LD al final del `index.html`.
 
-## Deploy
-- **Azure Static Web Apps** (recomendado) o cualquier hosting estático.
-- Opcional: CDN/DNS/SSL con Cloudflare.
 
 ## Licencia
 MIT (ver `LICENSE`). Marca/branding a definir por el usuario.
+By: https://PagioPro.com
