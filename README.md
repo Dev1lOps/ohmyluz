@@ -13,5 +13,5 @@ Está dividida en **bloques** (Hero, Servicios, Zonas, Tarifa, Opiniones, FAQs, 
 - 🔎 **SEO básico**: meta description + JSON-LD (*schema.org/Electrician*).  
 - 📱 **Responsive** con CTAs fijos en móvil (Llamar / WhatsApp).  
 
-**Demo**: _(pon aquí la URL cuando la publiques, p. ej. https://electricista.tu-dominio.com)_  
+**Demo**: https://electricista.pagiopro.com
 **Licencia**: MIT
