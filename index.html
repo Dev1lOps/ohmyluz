@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ohmyluz — Electricista 24/7</title>
+  <meta name="description" content="Ohmyluz: landing estática (HTML + CSS) para servicios eléctricos 24/7. Modular, rápida y fácil de editar." />
+  <meta name="theme-color" content="#f59e0b" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body class="antialiased text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur border-b">
+    <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-2 font-bold text-lg text-slate-900">
+        <img src="assets/img/logo-ohmyluz.svg" alt="Ohmyluz" class="h-6 w-6 text-[var(--brand)]" />
+        <span>Ohmyluz</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#zonas" class="hover:underline">Zonas</a>
+        <a href="#tarifa" class="hover:underline">Tarifa</a>
+        <a href="#opiniones" class="hover:underline">Opiniones</a>
+        <a href="#faqs" class="hover:underline">FAQs</a>
+        <a href="#contacto" class="btn-ghost">Contactar</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden btn-ghost">Menú</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <nav class="container mx-auto px-6 py-4 grid gap-3 text-sm">
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#zonas" class="hover:underline">Zonas</a>
+        <a href="#tarifa" class="hover:underline">Tarifa</a>
+        <a href="#opiniones" class="hover:underline">Opiniones</a>
+        <a href="#faqs" class="hover:underline">FAQs</a>
+        <a href="#contacto" class="btn-ghost justify-center">Contactar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero (dark) -->
+    <section class="hero-dark text-white border-b">
+      <div class="container mx-auto px-6 py-16 md:py-24 grid gap-12 md:grid-cols-2 md:items-center">
+        <div>
+          <span class="badge">Electricista 24/7</span>
+          <h1 class="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">Urgencias y servicios eléctricos en tu zona</h1>
+          <p class="mt-4 text-lg text-slate-200">Atención rápida, garantía y factura. Llegamos habitualmente en 30–60 minutos.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="tel:+34900111222" class="btn-brand">Llamar ahora</a>
+            <a href="#contacto" class="btn-ghost">Pedir presupuesto</a>
+          </div>
+          <ul class="mt-6 grid gap-2 text-sm text-slate-300">
+            <li>✔️ Técnicos cualificados y material homologado</li>
+            <li>✔️ SSL/privacidad en formularios (demo)</li>
+            <li>✔️ Factura y medios de pago</li>
+          </ul>
+        </div>
+        <div class="md:justify-self-end">
+          <div class="card bg-white p-6 max-w-lg">
+            <p class="section-kicker">Contacto rápido</p>
+            <h3 class="mt-1 text-lg font-semibold text-slate-900">¿Necesitas ayuda ahora?</h3>
+            <form class="mt-4 grid gap-3" id="quickForm">
+              <div>
+                <label class="block text-sm font-medium" for="qnombre">Nombre</label>
+                <input id="qnombre" class="mt-1 w-full rounded-xl border px-4 py-2" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium" for="qtel">Teléfono</label>
+                <input id="qtel" type="tel" class="mt-1 w-full rounded-xl border px-4 py-2" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium" for="qzona">Zona</label>
+                <input id="qzona" class="mt-1 w-full rounded-xl border px-4 py-2" placeholder="Barrio o municipio" />
+              </div>
+              <button class="mt-2 btn-brand">Solicitar llamada</button>
+              <p class="text-xs text-slate-500">Te llamamos en cuanto quede un técnico libre.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-16">
+      <div class="container mx-auto px-6">
+        <p class="section-kicker">Qué hacemos</p>
+        <h2 class="text-3xl font-bold tracking-tight">Servicios</h2>
+        <p class="mt-2 text-slate-600 max-w-3xl">Averías, instalaciones y seguridad. Trabajo limpio, rápido y con garantía.</p>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="card p-6">
+            <h3 class="text-lg font-semibold">Averías y urgencias</h3>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
+              <li>Diferenciales, cortocircuitos y sobrecargas</li>
+              <li>Saltos de luz y cuadros eléctricos</li>
+              <li>Reparación inmediata</li>
+            </ul>
+          </article>
+          <article class="card p-6">
+            <h3 class="text-lg font-semibold">Instalaciones y reformas</h3>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
+              <li>Enchufes, interruptores y luminarias</li>
+              <li>Canalizaciones y ampliaciones</li>
+              <li>Iluminación interior/exterior</li>
+            </ul>
+          </article>
+          <article class="card p-6">
+            <h3 class="text-lg font-semibold">Revisiones y seguridad</h3>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
+              <li>Mediciones, tomas de tierra y protecciones</li>
+              <li>Mantenimiento preventivo</li>
+              <li>Boletines/CIE <span class="text-slate-500">(si procede)</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zonas -->
+    <section id="zonas" class="py-16 border-t">
+      <div class="container mx-auto px-6">
+        <p class="section-kicker">Cobertura</p>
+        <h2 class="text-3xl font-bold tracking-tight">Zonas de servicio</h2>
+        <div class="mt-3 flex flex-wrap gap-2 text-sm">
+          <span class="chip">Centro</span><span class="chip">Norte</span><span class="chip">Sur</span><span class="chip">Este</span><span class="chip">Oeste</span><span class="chip">Alrededores</span>
+        </div>
+        <div class="mt-8 overflow-hidden rounded-2xl card">
+          <iframe title="Mapa de cobertura" class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Madrid%2C%20Espa%C3%B1a&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tarifa -->
+    <section id="tarifa" class="py-16">
+      <div class="container mx-auto px-6">
+        <p class="section-kicker">Precios</p>
+        <h2 class="text-3xl font-bold tracking-tight">Tarifa clara y sin sorpresas</h2>
+        <div class="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start">
+          <div>
+            <ul class="space-y-3 text-sm text-slate-700 list-disc pl-5">
+              <li><strong>Diagnóstico básico</strong> — incluido con la reparación</li>
+              <li><strong>Mano de obra</strong> — por hora o por servicio cerrado</li>
+              <li><strong>Desplazamiento</strong> — según zona</li>
+              <li><strong>Materiales</strong> — originales y homologados</li>
+            </ul>
+            <p class="mt-4 text-sm text-slate-500">*Precios orientativos según avería. Confirmación previa a la intervención.</p>
+          </div>
+          <div class="card p-8">
+            <div class="text-4xl font-extrabold text-slate-900">Desde 49€ <span class="text-base font-semibold align-super">+ IVA</span></div>
+            <p class="mt-2 text-slate-600">Avisos urgentes y reparaciones comunes.</p>
+            <a href="#contacto" class="mt-6 btn-brand">Pedir presupuesto</a>
+            <p class="mt-3 text-xs text-slate-500">Descuentos para comunidades y empresas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section id="opiniones" class="py-16 border-t">
+      <div class="container mx-auto px-6">
+        <p class="section-kicker">Confianza</p>
+        <h2 class="text-3xl font-bold tracking-tight">Opiniones</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="card p-6">
+            <div class="text-amber-500" aria-label="5 estrellas">★★★★★</div>
+            <p class="mt-3 text-sm text-slate-700">Me quedé sin luz por la noche y vinieron rápido. Solucionaron el cuadro y quedó perfecto.</p>
+            <p class="mt-3 text-sm text-slate-500">— Laura G.</p>
+          </article>
+          <article class="card p-6">
+            <div class="text-amber-500" aria-label="5 estrellas">★★★★★</div>
+            <p class="mt-3 text-sm text-slate-700">Cambio de enchufes y lámparas en el local. Trabajo limpio y puntual.</p>
+            <p class="mt-3 text-sm text-slate-500">— Óscar M.</p>
+          </article>
+          <article class="card p-6">
+            <div class="text-amber-500" aria-label="5 estrellas">★★★★★</div>
+            <p class="mt-3 text-sm text-slate-700">Nos asesoraron para mejorar iluminación exterior y quedó genial.</p>
+            <p class="mt-3 text-sm text-slate-500">— Patricia R.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="py-16">
+      <div class="container mx-auto px-6">
+        <p class="section-kicker">Dudas</p>
+        <h2 class="text-3xl font-bold tracking-tight">Preguntas frecuentes</h2>
+        <div class="mt-8 grid gap-4">
+          <details class="card p-6" open>
+            <summary class="cursor-pointer text-lg font-semibold">¿En cuánto tiempo llegáis?</summary>
+            <p class="mt-2 text-slate-700">Para urgencias, normalmente entre 30 y 60 minutos según zona y tráfico.</p>
+          </details>
+          <details class="card p-6">
+            <summary class="cursor-pointer text-lg font-semibold">¿Dais garantía?</summary>
+            <p class="mt-2 text-slate-700">Sí, garantía por escrito sobre mano de obra y materiales usados.</p>
+          </details>
+          <details class="card p-6">
+            <summary class="cursor-pointer text-lg font-semibold">¿Puedo pagar con tarjeta?</summary>
+            <p class="mt-2 text-slate-700">Aceptamos tarjeta, transferencia y efectivo. Emisión de factura.</p>
+          </details>
+          <details class="card p-6">
+            <summary class="cursor-pointer text-lg font-semibold">¿Trabajáis noches y festivos?</summary>
+            <p class="mt-2 text-slate-700">Sí, 24/7 con posible recargo nocturno/festivos. Lo confirmamos antes de intervenir.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA stripe -->
+    <section class="py-10 border-t bg-slate-50">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-lg font-semibold text-slate-900">¿Sin luz ahora mismo?</p>
+        <div class="flex items-center gap-3">
+          <a href="tel:+34900111222" class="btn-brand">Llamar 900 111 222</a>
+          <a class="btn-ghost" href="https://wa.me/34600000000?text=Hola%2C%20necesito%20un%20electricista">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div>
+            <p class="section-kicker">Contacto</p>
+            <h2 class="text-3xl font-bold tracking-tight">Cuéntanos tu avería</h2>
+            <p class="mt-2 text-slate-600 max-w-xl">Te llamamos para confirmar disponibilidad y coste antes de ir.</p>
+            <div class="mt-6 card p-6 text-sm text-slate-700">
+              <p class="font-medium">Horario habitual</p>
+              <ul class="mt-2 list-disc pl-5 space-y-1">
+                <li>Lunes–Viernes: 8:00–20:00 (urgencias 24/7)</li>
+                <li>Sábados: 9:00–14:00 (urgencias 24/7)</li>
+              </ul>
+            </div>
+          </div>
+          <form id="contactForm" class="card p-6 grid gap-4">
+            <div class="grid gap-4 md:grid-cols-2">
+              <div>
+                <label for="name" class="block text-sm font-medium">Nombre</label>
+                <input id="name" name="name" required class="mt-1 w-full rounded-xl border px-4 py-3" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium">Teléfono</label>
+                <input id="phone" name="phone" type="tel" required class="mt-1 w-full rounded-xl border px-4 py-3" />
+              </div>
+            </div>
+            <div>
+              <label for="address" class="block text-sm font-medium">Dirección o zona</label>
+              <input id="address" name="address" class="mt-1 w-full rounded-xl border px-4 py-3" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">Describe el problema</label>
+              <textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded-xl border px-4 py-3" placeholder="Sin luz en salón, salta el diferencial, etc."></textarea>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <input id="privacy" type="checkbox" required class="h-4 w-4" />
+              <label for="privacy">He leído y acepto la <a class="underline" href="/privacidad" target="_blank" rel="noopener">Política de Privacidad</a>.</label>
+            </div>
+            <button class="btn-brand">Enviar</button>
+            <p id="formNotice" class="text-sm text-slate-500">Este formulario abre tu cliente de email para enviarnos el mensaje.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-top">
+    <div class="container mx-auto px-6 py-8 text-sm text-slate-600 grid gap-4 md:flex md:items-center md:justify-between">
+      <p>© <span id="year"></span> Ohmyluz — Demo.</p>
+      <nav class="flex gap-4">
+        <a href="/aviso-legal.html" class="hover:underline">Aviso legal</a>
+        <a href="/privacidad" class="hover:underline">Privacidad</a>
+        <a href="/cookies" class="hover:underline">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="fixed inset-x-0 bottom-0 z-40 sticky-cta md:hidden">
+    <div class="container mx-auto px-6 py-3 flex items-center justify-between gap-3">
+      <a href="tel:+34900111222" class="flex-1 btn-brand justify-center">Llamar</a>
+      <a href="https://wa.me/34600000000?text=Hola%2C%20necesito%20un%20electricista" class="flex-1 btn-ghost justify-center">WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Ohmyluz (Demo)",
+    "url": "https://ohmyluz.example.com/",
+    "areaServed": ["Centro","Norte","Sur","Este","Oeste","Alrededores"],
+    "telephone": "+34 900 111 222",
+    "openingHours": ["Mo-Fr 08:00-20:00", "Sa 09:00-14:00"],
+    "description": "Urgencias, reparaciones e instalaciones eléctricas con atención rápida y garantía."
+  }
+  </script>
+</body>
+</html>
