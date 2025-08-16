@@ -34,4 +34,7 @@ html{scroll-behavior:smooth}
   outline:none; border-color:var(--brand);
   box-shadow:0 0 0 3px rgba(245,158,11,.25);
 }
+/* Labels y textos oscuros dentro del hero */
+.hero-dark .card { color: var(--ink); }      /* afecta a p, h3, etc. por herencia */
+.hero-dark .card label { color: var(--ink); }/* explícito para los labels */
 
