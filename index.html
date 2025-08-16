@@ -137,9 +137,8 @@
       <div class="container mx-auto px-6">
         <p class="section-kicker">Precios</p>
     
-        <!-- Grid estándar como el resto de secciones -->
-        <div class="mt-3 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
-          <div>
+        <div class="mt-3 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(360px,480px)] lg:items-start">
+          <div class="lg:justify-self-start">
             <h2 class="text-3xl font-bold tracking-tight">Tarifa clara y sin sorpresas</h2>
     
             <ul class="mt-6 space-y-3 text-sm text-slate-700 list-disc pl-5">
@@ -153,19 +152,18 @@
             </p>
           </div>
     
-          <!-- Tarjeta: alineada a la izquierda de su columna y centrada en altura -->
-        <aside class="card p-8 lg:max-w-[360px] lg:justify-self-start lg:self-center">
+          <!-- centrada horizontal y verticalmente en su columna -->
+          <aside class="card p-8 lg:max-w-[480px] lg:justify-self-center self-center">
             <div class="text-4xl font-extrabold text-slate-900">
               Desde 49€ <span class="text-base font-semibold align-super">+ IVA</span>
             </div>
             <p class="mt-2 text-slate-600">Avisos urgentes y reparaciones comunes.</p>
             <a href="#contacto" class="mt-6 btn-brand">Pedir presupuesto</a>
             <p class="mt-3 text-xs text-slate-500">Descuentos para comunidades y empresas.</p>
-        </aside>
+          </aside>
         </div>
       </div>
     </section>
-
 
     <!-- Opiniones -->
     <section id="opiniones" class="py-16 border-t">
