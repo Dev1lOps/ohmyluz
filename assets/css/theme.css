@@ -20,3 +20,18 @@ html{scroll-behavior:smooth}
 .sticky-cta{backdrop-filter: blur(6px);background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
 /* small utility for section headings */
 .section-kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+
+.hero-dark .card input,
+.hero-dark .card textarea,
+.hero-dark .card select {
+  background:#fff; color:#0f172a; border:1px solid var(--line);
+}
+.hero-dark .card input::placeholder,
+.hero-dark .card textarea::placeholder { color:#94a3b8; }
+.hero-dark .card input:focus,
+.hero-dark .card textarea:focus,
+.hero-dark .card select:focus {
+  outline:none; border-color:var(--brand);
+  box-shadow:0 0 0 3px rgba(245,158,11,.25);
+}
+
